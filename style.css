@@ -40,7 +40,7 @@ p { margin: 0 0 14px; }
 .btn-line:hover { background: var(--ink); color: #fff; }
 
 /* header */
-.top { background: var(--black); color: #fff; }
+.top { background: var(--black); color: #fff; border-bottom: 1px solid #222; }
 .top-in { display: flex; align-items: center; height: 60px; }
 .brand { display: flex; align-items: center; gap: 10px; font-weight: 600; font-size: 18px; text-decoration: none; }
 .top nav { margin-left: auto; display: flex; gap: 28px; }
