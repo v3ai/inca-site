@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Inca</title>
-<meta name="description" content="Inca is a free, open-source 3D modeling, animation and rendering application for Windows and Linux that works like Maya 2020.">
+<meta name="description" content="Inca is a free, open-source 3D modeling, animation and rendering application for Windows, Mac and Linux that works like Maya 2020.">
 <meta property="og:title" content="Inca">
-<meta property="og:description" content="Free 3D modeling, animation and rendering for Windows and Linux.">
+<meta property="og:description" content="Free 3D modeling, animation and rendering for Windows, Mac and Linux.">
 <meta property="og:image" content="https://incacad.com/img/og.jpg">
 <meta property="og:url" content="https://incacad.com/">
 <link rel="canonical" href="https://incacad.com/">
@@ -38,7 +38,7 @@
     <div class="hero-text">
       <p class="product"><img src="img/icon.png" alt="" width="28" height="28">Inca</p>
       <h1>Inca: free 3D modeling, animation and rendering</h1>
-      <p class="hero-sub">The Maya&nbsp;2020 workflow in an open-source desktop app for Windows and Linux.</p>
+      <p class="hero-sub">The Maya&nbsp;2020 workflow in an open-source desktop app for Windows, Mac and Linux.</p>
     </div>
     <a class="hero-shot zoom" href="img/hero.webp" data-cap="Inca's main window">
       <img src="img/hero.webp" width="1920" height="1107" alt="Inca's main window with a shaded scene, the shelf and the Channel Box" fetchpriority="high">
@@ -165,11 +165,12 @@
           <a class="btn btn-dark" data-asset=".AppImage" href="https://github.com/v3ai/inca/releases/latest">AppImage <span class="size"></span></a>
         </div>
       </div>
-      <div>
+      <div data-os="mac">
         <h3>macOS</h3>
-        <p>No ready-made build yet. Running it from source with Node.js takes about five minutes.</p>
+        <p>Drag Inca into Applications. The first time, macOS can't verify it: open <b>System Settings → Privacy &amp; Security</b> and click <b>Open Anyway</b>.</p>
         <div class="dl-btns">
-          <a class="btn btn-line" href="https://github.com/v3ai/inca#run-from-source">Run from source</a>
+          <a class="btn btn-dark" data-asset="mac-arm64.dmg" href="https://github.com/v3ai/inca/releases/latest">Apple Silicon <span class="size"></span></a>
+          <a class="btn btn-line" data-asset="mac-x64.dmg" href="https://github.com/v3ai/inca/releases/latest">Intel <span class="size"></span></a>
         </div>
       </div>
     </div>
@@ -198,7 +199,7 @@
       </details>
       <details>
         <summary>Is there a Mac version?</summary>
-        <p>Not as a download yet. You can run it from source on a Mac; the steps are in the README.</p>
+        <p>Yes, as a .dmg for Apple Silicon (M1 and newer) and Intel Macs. Inca isn't registered with Apple, so the first time you open it, go to System Settings → Privacy &amp; Security and click Open Anyway. You only do this once.</p>
       </details>
       <details>
         <summary>How do I report a bug or ask for a feature?</summary>

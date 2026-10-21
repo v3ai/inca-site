@@ -1,7 +1,7 @@
 (() => {
   const $ = (s) => document.querySelector(s);
   const ua = navigator.userAgent;
-  const os = /Windows/.test(ua) ? 'windows' : /Linux|X11/.test(ua) && !/Android/.test(ua) ? 'linux' : null;
+  const os = /Windows/.test(ua) ? 'windows' : /Macintosh/.test(ua) ? 'mac' : /Linux|X11/.test(ua) && !/Android/.test(ua) ? 'linux' : null;
   const mb = (n) => Math.round(n / 1048576) + ' MB';
   if (os) $(`.dl [data-os="${os}"]`)?.classList.add('mine');
 
@@ -17,10 +17,11 @@
         a.href = f.browser_download_url; a.querySelector('.size').textContent = mb(f.size);
       }
       $('#bar-meta').innerHTML = `<b>Free</b> · ${rel.tag_name} · MIT license`;
-      const mine = os && find(os === 'windows' ? 'portable.exe' : '.AppImage');
-      if (mine) {
-        $('#hero-dl').href = mine.browser_download_url;
-        $('#hero-dl').textContent = 'Download for ' + (os === 'windows' ? 'Windows' : 'Linux');
+      // browsers can't reliably tell Apple Silicon from Intel, so Mac visitors pick in the download section
+      const mine = { windows: 'portable.exe', linux: '.AppImage', mac: 'mac-arm64.dmg' }[os];
+      if (mine && find(mine)) {
+        if (os !== 'mac') $('#hero-dl').href = find(mine).browser_download_url;
+        $('#hero-dl').textContent = 'Download for ' + { windows: 'Windows', linux: 'Linux', mac: 'Mac' }[os];
       }
     })
     .catch(() => {});
