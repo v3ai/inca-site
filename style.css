@@ -40,7 +40,7 @@ p { margin: 0 0 14px; }
 .btn-line:hover { background: var(--ink); color: #fff; }
 
 /* header */
-.top { background: #1a1a1a; color: #fff; }
+.top { background: var(--black); color: #fff; }
 .top-in { display: flex; align-items: center; height: 60px; }
 .brand { display: flex; align-items: center; gap: 10px; font-weight: 600; font-size: 18px; text-decoration: none; }
 .top nav { margin-left: auto; display: flex; gap: 28px; }
@@ -119,7 +119,7 @@ details p { color: var(--grey); padding-bottom: 8px; max-width: 680px; }
 .cta-in div { display: flex; gap: 14px; flex-wrap: wrap; }
 
 /* footer */
-.foot { background: #1a1a1a; color: #aaa; padding: 40px 0 48px; font-size: 14px; }
+.foot { background: var(--black); color: #aaa; padding: 40px 0 48px; font-size: 14px; }
 .foot-in { display: grid; grid-template-columns: auto 1fr; gap: 16px 40px; align-items: center; }
 .foot .brand { color: #fff; font-size: 16px; }
 .foot nav { display: flex; gap: 24px; justify-content: flex-end; flex-wrap: wrap; }
