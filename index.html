@@ -9,121 +9,226 @@
 <meta property="og:description" content="Free 3D modeling, animation and rendering for Windows and Linux.">
 <meta property="og:image" content="img/og.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="theme-color" content="#1c1c1c">
+<meta name="theme-color" content="#000000">
 <link rel="icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="top">
   <div class="wrap top-in">
-    <a class="brand" href="./"><img src="img/icon.png" alt="" width="24" height="24">Inca</a>
+    <a class="brand" href="./"><img src="img/icon.png" alt="" width="26" height="26">Inca</a>
     <nav>
       <a href="#features">Features</a>
+      <a href="#maya">For Maya users</a>
       <a href="#download">Download</a>
+      <a href="#faq">FAQ</a>
       <a href="https://github.com/v3ai/inca">GitHub</a>
     </nav>
   </div>
 </header>
 
-<main>
-
 <section class="hero">
   <div class="wrap hero-in">
     <div class="hero-text">
-      <h1>Free 3D modeling, animation and rendering.</h1>
-      <p>Inca is an open-source desktop app that works like Maya&nbsp;2020. The menus, hotkeys and marking menus are where you expect them, and every step keeps its construction history.</p>
-      <p class="actions">
-        <a class="btn" id="hero-dl" href="#download">Download</a>
-        <a href="https://github.com/v3ai/inca">Source code</a>
-      </p>
-      <p class="meta" id="hero-meta">Windows and Linux · MIT license</p>
+      <p class="product"><img src="img/icon.png" alt="" width="28" height="28">Inca</p>
+      <h1>Inca: free 3D modeling, animation and rendering</h1>
+      <p class="hero-sub">The Maya&nbsp;2020 workflow in an open-source desktop app for Windows and Linux.</p>
     </div>
-    <a class="hero-shot" href="img/hero.webp" data-cap="Inca's main window">
+    <a class="hero-shot zoom" href="img/hero.webp" data-cap="Inca's main window">
       <img src="img/hero.webp" width="1920" height="1107" alt="Inca's main window with a shaded scene, the shelf and the Channel Box" fetchpriority="high">
     </a>
   </div>
 </section>
 
-<section id="features" class="wrap">
-  <div class="row">
-    <div>
-      <h2>Modeling</h2>
-      <p>Polygon modeling on n-gon meshes: extrude, bevel, bridge, multi-cut, booleans, quad draw and sculpting brushes. NURBS primitives and CV, EP, pencil and arc curves, with revolve, loft and extrude. Change any input in the Channel Box later and the result updates.</p>
+<div class="bar">
+  <div class="wrap bar-in">
+    <a class="explore" href="#features"><span aria-hidden="true">↓</span> Explore <b>Inca</b></a>
+    <div class="bar-right">
+      <span class="price" id="bar-meta"><b>Free</b> · MIT license</span>
+      <a class="btn btn-sun" id="hero-dl" href="#download">Download</a>
+      <a class="btn btn-line-light" href="https://github.com/v3ai/inca">Source code</a>
     </div>
-    <a class="shot" href="img/four.webp" data-cap="Four-view layout"><img src="img/four.webp" loading="lazy" width="1920" height="1107" alt="Four-view layout"></a>
   </div>
+</div>
 
-  <div class="row">
-    <div>
-      <h2>Animation and rigging</h2>
-      <p>Keyframes, the Graph Editor and Dope Sheet, motion paths and set driven keys. Joints with IK, smooth bind and weight painting, constraints, deformers and blend shapes. Playblast to video or images.</p>
+<main>
+
+<section class="light" id="features">
+  <div class="wrap">
+    <div class="row">
+      <div class="row-text">
+        <p class="label">3D modeling</p>
+        <h2>Build anything, and change it later</h2>
+        <p>Polygon modeling on n-gon meshes with extrude, bevel, bridge, multi-cut, booleans, quad draw and sculpting brushes. NURBS primitives, and CV, EP, pencil and arc curves for revolve, loft and extrude. Every step keeps its construction history, so you can go back and change a bevel's segments after the fact.</p>
+      </div>
+      <a class="shot zoom" href="img/four.webp" data-cap="Four-view layout"><img src="img/four.webp" loading="lazy" width="1920" height="1107" alt="Four-view layout with top, persp, front and side views"></a>
     </div>
-    <a class="shot" href="img/graph.webp" data-cap="Graph Editor"><img src="img/graph.webp" loading="lazy" width="1920" height="1107" alt="Graph Editor with animation curves"></a>
-  </div>
 
-  <div class="row">
-    <div>
-      <h2>Shading</h2>
-      <p>Standard Surface, Lambert, Blinn and Phong materials, connected to file, checker, ramp, noise and grid textures in the Hypershade.</p>
+    <div class="row flip">
+      <div class="row-text">
+        <p class="label">Animation &amp; rigging</p>
+        <h2>Bring characters to life</h2>
+        <p>Set keys, scrub the Time Slider and shape motion in the Graph Editor and Dope Sheet. Build skeletons with IK, bind skin and paint weights, then drive them with constraints, deformers, blend shapes and set driven keys.</p>
+      </div>
+      <a class="shot zoom" href="img/graph.webp" data-cap="Graph Editor"><img src="img/graph.webp" loading="lazy" width="1920" height="1107" alt="Graph Editor with animation curves of a bouncing ball"></a>
     </div>
-    <a class="shot" href="img/hypershade.webp" data-cap="Hypershade"><img src="img/hypershade.webp" loading="lazy" width="1920" height="1107" alt="Hypershade with materials and node graph"></a>
-  </div>
 
-  <div class="row">
-    <div>
-      <h2>Rendering</h2>
-      <p>A built-in path tracer and a faster hardware renderer. Render one frame in the Render View or a sequence to the project's images folder.</p>
+    <div class="row">
+      <div class="row-text">
+        <p class="label">Look development</p>
+        <h2>Shade in the Hypershade</h2>
+        <p>Create Standard Surface, Lambert, Blinn and Phong materials, connect file, checker, ramp, noise and grid textures in the node graph, and drag the result onto your models.</p>
+      </div>
+      <a class="shot zoom" href="img/hypershade.webp" data-cap="Hypershade"><img src="img/hypershade.webp" loading="lazy" width="1920" height="1107" alt="Hypershade with material swatches, node graph and property editor"></a>
     </div>
-    <a class="shot" href="img/render.webp" data-cap="Render View"><img src="img/render.webp" loading="lazy" width="1920" height="1107" alt="Render View with a rendered frame"></a>
-  </div>
 
-  <div class="row">
-    <div>
-      <h2>Scripting</h2>
-      <p>Every action prints the MEL command it ran. Run MEL or JavaScript in the Script Editor and save scripts to the shelf.</p>
+    <div class="row flip">
+      <div class="row-text">
+        <p class="label">Rendering</p>
+        <h2>Render without leaving the app</h2>
+        <p>A physically based path tracer for final frames and a fast hardware renderer for previews. Compare images in the Render View, or batch a whole sequence to your project's images folder.</p>
+      </div>
+      <a class="shot zoom" href="img/render.webp" data-cap="Render View"><img src="img/render.webp" loading="lazy" width="1920" height="1107" alt="Render View showing a rendered frame with soft shadows"></a>
     </div>
-    <a class="shot" href="img/script.webp" data-cap="Script Editor"><img src="img/script.webp" loading="lazy" width="1920" height="1107" alt="Script Editor with MEL history"></a>
-  </div>
 
-  <div class="also">
-    <h2>Also</h2>
-    <dl>
-      <dt>UVs</dt><dd>Projections, UV Editor, unfold and layout</dd>
-      <dt>Lighting</dt><dd>Directional, point, spot, area and sky dome lights</dd>
-      <dt>Dynamics</dt><dd>Particles, fields, rigid bodies, fire and smoke</dd>
-      <dt>Files</dt><dd>Projects and autosave; OBJ, FBX, glTF and STL import and export</dd>
-      <dt>Interface</dt><dd>Hotbox, marking menus, shelves, workspaces, Outliner, Attribute Editor</dd>
-    </dl>
-    <p><a href="https://github.com/v3ai/inca/blob/master/FEATURES.md">Full feature list</a></p>
+    <div class="row">
+      <div class="row-text">
+        <p class="label">Customization</p>
+        <h2>Script it with MEL or JavaScript</h2>
+        <p>Every menu item and tool echoes the command it ran. Paste it into the Script Editor, wrap it in a loop, and save it to the shelf.</p>
+        <a class="btn btn-line" href="https://github.com/v3ai/inca/blob/master/FEATURES.md">See all features</a>
+      </div>
+      <a class="shot zoom" href="img/script.webp" data-cap="Script Editor"><img src="img/script.webp" loading="lazy" width="1920" height="1107" alt="Script Editor with echoed MEL commands"></a>
+    </div>
   </div>
 </section>
 
-<section id="download" class="wrap">
-  <h2>Download <span id="dl-version"></span></h2>
-  <table class="dl">
-    <tr>
-      <th>Windows</th>
-      <td><a data-asset="portable.exe" href="https://github.com/v3ai/inca/releases/latest">Portable .exe</a> <span class="size"></span></td>
-      <td><a data-asset="win-x64.zip" href="https://github.com/v3ai/inca/releases/latest">.zip</a> <span class="size"></span></td>
-    </tr>
-    <tr>
-      <th>Linux</th>
-      <td colspan="2"><a data-asset=".AppImage" href="https://github.com/v3ai/inca/releases/latest">AppImage</a> <span class="size"></span></td>
-    </tr>
-    <tr>
-      <th>macOS</th>
-      <td colspan="2"><a href="https://github.com/v3ai/inca#run-from-source">Run from source</a></td>
-    </tr>
-  </table>
-  <p class="note">Nothing to install. On Windows, if SmartScreen stops it, click More info, then Run anyway. On Linux, make the AppImage executable first (<code>chmod +x</code>). Older versions are on the <a href="https://github.com/v3ai/inca/releases">releases page</a>.</p>
+<section class="light alt">
+  <div class="wrap">
+    <p class="label">What's included</p>
+    <h2>One app for the whole pipeline</h2>
+    <div class="cols">
+      <div><h3>Interface</h3><p>Menu sets, shelves, hotbox, marking menus, Channel Box, Attribute Editor, Outliner and workspaces.</p></div>
+      <div><h3>UVs</h3><p>Planar, cylindrical, spherical and automatic projection, plus a UV Editor with unfold and layout.</p></div>
+      <div><h3>Lighting</h3><p>Directional, point, spot, area and ambient lights, and a sky dome with HDRI or procedural sky.</p></div>
+      <div><h3>Dynamics</h3><p>Particle emitters, fields, active and passive rigid bodies, and fire and smoke presets.</p></div>
+      <div><h3>Files</h3><p>Projects, autosave and recent files. Import OBJ, FBX, glTF/GLB and STL; export OBJ, glTF/GLB and STL.</p></div>
+      <div><h3>Editors</h3><p>Graph Editor, Dope Sheet, UV Editor, Hypergraph, Connection Editor and Script Editor.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="dark" id="maya">
+  <div class="wrap maya">
+    <div>
+      <p class="label">For Maya users</p>
+      <h2>Your hotkeys already work</h2>
+      <p class="muted">Inca follows Maya 2020's layout, default hotkeys and naming, down to <code>pCube1</code> and <code>polyCube1</code>. There's nothing new to learn before you start.</p>
+    </div>
+    <dl class="keys">
+      <dt><kbd>Q</kbd> <kbd>W</kbd> <kbd>E</kbd> <kbd>R</kbd></dt><dd>Select, move, rotate, scale</dd>
+      <dt><kbd>Alt</kbd> + drag</dt><dd>Tumble, track, dolly</dd>
+      <dt><kbd>Space</kbd></dt><dd>Hotbox, or tap for four views</dd>
+      <dt><kbd>F</kbd> <kbd>A</kbd></dt><dd>Frame selected, frame all</dd>
+      <dt><kbd>1</kbd> <kbd>2</kbd> <kbd>3</kbd></dt><dd>Smooth mesh preview</dd>
+      <dt><kbd>4</kbd> <kbd>5</kbd> <kbd>6</kbd> <kbd>7</kbd></dt><dd>Wireframe, shaded, textured, lights</dd>
+      <dt><kbd>F8</kbd> – <kbd>F12</kbd></dt><dd>Object and component modes</dd>
+      <dt><kbd>S</kbd></dt><dd>Set key</dd>
+    </dl>
+  </div>
+</section>
+
+<section class="light" id="download">
+  <div class="wrap">
+    <p class="label">Download</p>
+    <h2>Get Inca <span id="dl-version"></span></h2>
+    <p class="lead">No installer, no account. Download it and start working.</p>
+    <div class="dl">
+      <div data-os="windows">
+        <h3>Windows</h3>
+        <p>64-bit. The portable exe runs without installing anything. If SmartScreen stops it, click <b>More info</b>, then <b>Run anyway</b>.</p>
+        <div class="dl-btns">
+          <a class="btn btn-dark" data-asset="portable.exe" href="https://github.com/v3ai/inca/releases/latest">Portable .exe <span class="size"></span></a>
+          <a class="btn btn-line" data-asset="win-x64.zip" href="https://github.com/v3ai/inca/releases/latest">.zip <span class="size"></span></a>
+        </div>
+      </div>
+      <div data-os="linux">
+        <h3>Linux</h3>
+        <p>64-bit AppImage for most distributions. Make it executable with <code>chmod +x</code>, then run it.</p>
+        <div class="dl-btns">
+          <a class="btn btn-dark" data-asset=".AppImage" href="https://github.com/v3ai/inca/releases/latest">AppImage <span class="size"></span></a>
+        </div>
+      </div>
+      <div>
+        <h3>macOS</h3>
+        <p>No ready-made build yet. Running it from source with Node.js takes about five minutes.</p>
+        <div class="dl-btns">
+          <a class="btn btn-line" href="https://github.com/v3ai/inca#run-from-source">Run from source</a>
+        </div>
+      </div>
+    </div>
+    <p class="small">Release notes and older versions are on the <a href="https://github.com/v3ai/inca/releases">releases page</a>.</p>
+  </div>
+</section>
+
+<section class="light alt" id="faq">
+  <div class="wrap faq">
+    <div>
+      <p class="label">FAQ</p>
+      <h2>Questions</h2>
+    </div>
+    <div>
+      <details>
+        <summary>Is Inca really free?</summary>
+        <p>Yes. It's open source under the MIT license, with no subscription or account, and you can use it for commercial work.</p>
+      </details>
+      <details>
+        <summary>Can it open Maya scenes?</summary>
+        <p>Not .ma or .mb files. Bring models across as OBJ, FBX or glTF. Inca saves its own scenes as .inca files.</p>
+      </details>
+      <details>
+        <summary>Is it made by Autodesk?</summary>
+        <p>No. Inca is an independent project that recreates the Maya 2020 workflow. It isn't affiliated with Autodesk.</p>
+      </details>
+      <details>
+        <summary>Is there a Mac version?</summary>
+        <p>Not as a download yet. You can run it from source on a Mac; the steps are in the README.</p>
+      </details>
+      <details>
+        <summary>How do I report a bug or ask for a feature?</summary>
+        <p>Open an issue on <a href="https://github.com/v3ai/inca/issues">GitHub</a>. It helps to say how Maya behaves in the same situation. Pull requests are welcome too.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="dark cta">
+  <div class="wrap cta-in">
+    <h2>Start modeling today</h2>
+    <div>
+      <a class="btn btn-sun" href="#download">Download Inca</a>
+      <a class="btn btn-line-light" href="https://github.com/v3ai/inca">View on GitHub</a>
+    </div>
+  </div>
 </section>
 
 </main>
 
-<footer class="wrap foot">
-  <p>Inca is MIT licensed. Bugs and requests go to <a href="https://github.com/v3ai/inca/issues">GitHub issues</a>.</p>
-  <p>Not affiliated with Autodesk. Maya is a trademark of Autodesk, Inc.</p>
+<footer class="foot">
+  <div class="wrap foot-in">
+    <a class="brand" href="./"><img src="img/icon.png" alt="" width="22" height="22">Inca</a>
+    <nav>
+      <a href="https://github.com/v3ai/inca">Source</a>
+      <a href="https://github.com/v3ai/inca/releases">Releases</a>
+      <a href="https://github.com/v3ai/inca/issues">Issues</a>
+      <a href="https://github.com/v3ai/inca/blob/master/FEATURES.md">Feature list</a>
+    </nav>
+    <p>Inca is free software under the MIT license. It is not affiliated with or endorsed by Autodesk. Autodesk and Maya are trademarks of Autodesk, Inc.</p>
+  </div>
 </footer>
 
 <div class="lightbox" id="lightbox" hidden><img id="lb-img" alt=""></div>
