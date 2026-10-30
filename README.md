@@ -1,6 +1,6 @@
 # Inca website
 
-The website for [Inca](https://github.com/v3ai/inca), a free, open-source 3D modeling, animation and rendering application.
+The website for [Inca](https://github.com/RX-7-GTC/inca), a free, open-source 3D modeling, animation and rendering application.
 
 Live at https://incacad.com.
 

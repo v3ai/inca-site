@@ -6,7 +6,7 @@
   if (os) $(`.dl [data-os="${os}"]`)?.classList.add('mine');
 
   // version, direct download links and sizes from the latest release
-  fetch('https://api.github.com/repos/v3ai/inca/releases/latest')
+  fetch('https://api.github.com/repos/RX-7-GTC/inca/releases/latest')
     .then((r) => (r.ok ? r.json() : Promise.reject()))
     .then((rel) => {
       const assets = rel.assets || [];
